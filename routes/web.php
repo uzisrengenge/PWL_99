@@ -69,5 +69,9 @@ Route:: resource ('photos', PhotoController:: class)->only(['index', 'show']);
 Route:: resource ('photos', PhotoController::class) ->except(['create', 'store', 'update', 'destroy']);
 
 
+// Route::get('/greating', function () {
+//    return view  ('blog.hello', ['name' => 'uzi']);
+// });
 
+wRoute::get('/greating', [WelcomeController::class, 'greeting']);
 
